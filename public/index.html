@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./tailwind.css">
+
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="font-ubuntu ">
+  <section class="mobile:text-center">
+    <header class="relative text-white bg-gradient-to-r from-glightred1 to-glightred2 h-500 rounded-bl-5rem ">
+
+      <div class="py-10 mx-20 mobile:mx-6">
+        <!--  MARGIN CONTAINER -->
+
+        <nav class="flex items-center justify-between">
+         
+
+          <div class="flex flex-row items-center ">
+            <h1 class="pr-12 text-4xl font-semibold transform -translate-y-2">Blogr</h1>
+
+            <ul class="px-5 cursor-pointer mdmax:hidden">
+              <li>Product 
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              </li>
+              <div class="hidden">
+                <li><a href="">Overview</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Integrations</a></li>
+              </div>
+            </ul>
+
+            <ul class="px-5 cursor-pointer mdmax:hidden">
+              <li>Company</li> 
+              <div class="hidden">
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+              </div>
+            </ul>
+
+            <ul class="px-5 cursor-pointer mdmax:hidden">
+              <li>Connect</li>
+              <div class="hidden">
+                <li><a href="">Contact</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">LinkedIn</a></li>
+              </div>
+
+            </ul>
+          </div>
+
+          <div id="menu" class="absolute right-7 md:hidden">
+            <svg class="cursor-pointer w-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </div>
+
+
+         
+
+          <div>
+            <ul class="flex flex-row mdmax:hidden">
+              <li><button class="mr-4 btn2">Login</button></li>
+              <li><button class="btn1">Sign Up</button></li>
+            </ul>
+          </div>
+
+        </nav>
+
+        <section class="flex flex-col items-center justify-center mt-20 justify-items-center font-overpass">
+          <h1 class="text-5xl font-bold mb-7 mobile:text-4xl">A modern publishing platform</h1>
+          <p class="mb-10 text-lg font-extralight">Grow your audience and build your online brand</p>
+
+          <div>
+            <button class="btn1">Start for Free</button>
+            <button class="btn2">Learn More</button>
+          </div>
+        </section>
+
+      </div> <!-- END MARGIN CONTAINER -->
+
+    </header>
+    <!-- END HEADER-->
+
+
+
+    <main class="overflow-hidden font-overpass mobile:text-center ">
+
+      <!-- FIRST SECTION-->
+      <div class="mx-20 my-28 mobile:mx-3">
+        <section class="relative pb-20">
+          <h1 class="pb-10 text-3xl font-bold text-center text-verydarkblue">
+            Designed for the future
+          </h1>
+
+          <div class="absolute top-0 -right-32 w-34 mobile:hidden lgmax:hidden" id="editor-desktop">
+            <img src="/public/images/1parte/illustration-editor-desktop.svg" alt="">
+          </div>
+
+
+          <div class="mobile:mb-10 lg:hidden sm:hidden" id="editor-mobile">
+            <img src="/public/images/1parte/illustration-editor-mobile.svg" alt="">
+          </div>
+
+          <div class="flex flex-col items-center md:w-31.4 mobile:mx-10">
+
+            <div class="pb-10">
+              <h2 class="pb-6 text-2xl font-bold text-verydarkblue">Introducing an extensible editor</h2>
+              <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.</p>
+            </div>
+
+            <div>
+              <h2 class="pb-6 text-2xl font-bold text-verydarkblue">Robust content management</h2>
+              <p>Flexible content management enables users to easily move through posts. Increase the usability of your
+                blog
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+                control.</p>
+            </div>
+          </div>
+
+
+
+        </section>
+
+      </div>
+      <!-- END FIRST SECTION-->
+
+
+
+      <!-- SECOND SECTION-->
+      <section 
+      class="relative flex items-center justify-center text-white mobile:h-600 bg-gradient-to-l from-gdesaturatedblue to-ggrayblue rounded-bl-5rem rounded-tr-5rem lg:justify-around mobile:flex-col">
+
+      <div class="transform mobile:w-11/12 mobile:-translate-y-32" id="phone">
+        <img src="/public/images/illustration-phones.svg" alt="phones">
+      </div>
+
+      <div class="pb-10 tracking-wide transform lg:w-31.4 mobile:text-center mobile:mx-10 mobile:-translate-y-28 lg:mx-20">
+        <h2 class="pb-6 text-3xl font-bold">
+          State of the Art Infrastructure
+        </h2>
+        <p class="">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+          connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site
+          competitive.
+        </p>
+      </div>
+      
+      </section>
+      <!-- END SECOND SECTION-->
+      
+
+       <!-- THIRD SECTION-->
+      <section class="relative flex lg:my-44 h-50 md:mx-20 lg:justify-end mobile:pb-14">
+        <div class="md:w-31.4 mobile:mx-10">
+          <div class="absolute w-2/3 -left-60 -bottom-32 lgmax:hidden">
+            <img src="/public/images/3parte/illustration-laptop-desktop.svg" alt="">
+          </div>
+
+          <div id="laptop-mobile" class="sm:hidden mobile:mt-14 mobile:mb-10">
+            <img src="/public/images/3parte/illustration-laptop-mobile.svg" alt="">
+          </div>
+        
+          <div class="pb-10">
+            <h2 class="pb-6 text-2xl font-bold text-verydarkblue">
+              Free, open, simple
+            </h2>
+            <p>
+              Blogr is a free and open source application backed by a large community of helpful developers. It supports
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+              tools,
+              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="pb-6 text-2xl font-bold text-verydarkblue">
+              Powerful tooling
+            </h2>
+            <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and
+              deployment a breeze, but
+              capable of producing even the most complicated sites.</p>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- END THIRD SECTION-->
+
+
+
+      <!-- START FOOTER -->
+      <section class="overflow-hidden text-grayishblue bg-verydarkblackblue rounded-tr-5rem font-ubuntu">
+        <div class="flex justify-around py-16 mobile:flex-col">
+
+          <h1 class="text-4xl font-bold text-white mobile:mb-16 ">Blogr</h1>
+
+          <div>
+            <ul class="mb-10 mobile:">
+              <h3 class="pb-6 text-lg font-semibold text-white">Product</h3>
+              <li><a class="duration-300 hover:underline" href="">Overview</a></li>
+              <li><a class="duration-300 hover:underline" href="">Pricing</a></li>
+              <li><a class="duration-300 hover:underline" href="">Marketplace</a></li>
+              <li><a class="duration-300 hover:underline" href="">Features</a></li>
+              <li><a class="duration-300 hover:underline" href="">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="mb-10 mobile:">
+              <h3 class="pb-6 text-lg font-semibold text-white">Company</h3>
+              <li><a class="duration-300 hover:underline" href="">About</a></li>
+              <li><a class="duration-300 hover:underline" href="">Team</a></li>
+              <li><a class="duration-300 hover:underline" href="">Blog</a></li>
+              <li><a class="duration-300 hover:underline" href="">Careers</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="mb-10 mobile:">
+              <h3 class="pb-6 text-lg font-semibold text-white">Connect</h3>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Newsletter</a></li>
+              <li><a href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-sm text-white attribution">
+          Challenge by <a class="duration-300 hover:text-lightred" href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank">Frontend Mentor</a>.
+          Coded by <a class="duration-300 hover:text-lightred" href="#">Michael Andrade</a>.
+        </div>
+
+      </section>
+      <!-- END FOOTER -->
+
+    </main>
+  </section>
+
+</body>
+
+</html>
