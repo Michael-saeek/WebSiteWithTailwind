@@ -29,16 +29,17 @@
         <!--  MARGIN CONTAINER -->
 
         <nav class="flex items-center justify-between">
-         
+
 
           <div class="flex flex-row items-center h-0">
             <h1 class="pr-12 text-4xl font-semibold transform -translate-y-2">Blogr</h1>
 
-            <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li id="menu-product" class="hover:underline">
-                Product 
+            <ul class="relative px-5 cursor-pointer mdmax:hidden">
+              <li id="menu-product" class="hover:underline">Product 
+                <svg id="mn-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
               </li>
-              <ul id="list-product" class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+              <ul id="list-product"
+                class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
                 <li class="pb-2 hover:underline"><a href="">Overview</a></li>
                 <li class="pb-2 hover:underline"><a href="">Pricing</a></li>
                 <li class="pb-2 hover:underline"><a href="">Marketplace</a></li>
@@ -48,9 +49,12 @@
             </ul>
 
             <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li id="menu-company" class="hover:underline">Company</li>
+              <li id="menu-company" class="hover:underline">Company
+                <svg id="company-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              </li>
 
-              <ul id="list-company" class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+              <ul id="list-company"
+                class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
                 <li class="pb-2 hover:underline"><a href="">About</a></li>
                 <li class="pb-2 hover:underline"><a href="">Team</a></li>
                 <li class="pb-2 hover:underline"><a href="">Blog</a></li>
@@ -59,9 +63,12 @@
             </ul>
 
             <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li id="menu-connect" class="hover:underline">Connect</li>
+              <li id="menu-connect" class="hover:underline">Connect
+                <svg id="connect-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              </li>
 
-              <ul id="list-connect" class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+              <ul id="list-connect"
+                class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
                 <li class="pb-2 hover:underline"><a href="">Contact</a></li>
                 <li class="pb-2 hover:underline"><a href="">Newsletter</a></li>
                 <li class="pb-2 hover:underline"><a href="">LinkedIn</a></li>
@@ -78,13 +85,14 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </div>
-          
-          
-          <div id="navMobile" class="duration-300 transform z-30 hidden text-gdesaturatedblue font-overpass absolute top-20 flex flex-col w-90% h-screen text-black bg-white shadow-2xl left-5 rounded-lg minmobile:hidden p-6">
+
+
+          <div id="navMobile"
+            class="duration-300 transform z-30 hidden text-gdesaturatedblue font-overpass absolute top-20 flex flex-col w-90% h-screen text-black bg-white shadow-2xl left-5 rounded-lg minmobile:hidden p-6">
 
             <ul class="mt-10 mb-6">
-              <li id="mn-product" class="font-bold">
-                Product 
+              <li id="mn-product" class="font-bold">Product
+                <svg id="arrow-mn-product" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
               </li>
               <ul id="ls-product" class="hidden py-4 font-medium bg-gray-200 rounded-lg ">
                 <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Overview</a></li>
@@ -95,8 +103,10 @@
               </ul>
             </ul>
 
-            <ul class="mb-6"">
-              <li id="mn-company" class="font-bold">Company</li>
+            <ul class="mb-6">
+              <li id="mn-company" class="font-bold">Company
+                <svg id="arrow-mn-company" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+              </li>
 
               <ul id="ls-company" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
                 <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">About</a></li>
@@ -106,8 +116,10 @@
               </ul>
             </ul>
 
-            <ul class="mb-6"">
-              <li id="mn-connect" class="font-bold">Connect</li>
+            <ul class="mb-6">
+              <li id="mn-connect" class="font-bold">Connect
+                <svg id="arrow-mn-connect" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+              </li>
 
               <ul id="ls-connect" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
                 <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Contact</a></li>
@@ -119,8 +131,12 @@
             <hr>
 
             <ul class="mt-4 text-center">
-              <li class="mb-2"><button class="px-6 py-3 font-bold duration-300 bg-white rounded-full text-gdesaturatedblue hover:bg-verylightred hover:text-white;">Login</button></li>
-              <li><button class="px-6 py-3 text-white rounded-full bg-gradient-to-r from-glightred1 to bg-glightred2">Sign Up</button></li>
+              <li class="mb-2"><button
+                  class="px-6 py-3 font-bold duration-300 bg-white rounded-full text-gdesaturatedblue hover:bg-verylightred hover:text-white;">Login</button>
+              </li>
+              <li><button
+                  class="px-6 py-3 text-white rounded-full bg-gradient-to-r from-glightred1 to bg-glightred2">Sign
+                  Up</button></li>
             </ul>
           </div>
           <!-- END MENU ICON -->
@@ -160,13 +176,13 @@
             Designed for the future
           </h1>
 
-          <div class="absolute top-0 -right-32 w-34 mobile:hidden lgmax:hidden" id="editor-desktop">
-            <img src="/public/images/1parte/illustration-editor-desktop.svg" alt="">
+          <div class="absolute w-2/3 -top-28 -right-80 mobile:hidden lgmax:hidden" id="editor-desktop">
+            <img src="/public/images/illustration-editor-desktop.svg" alt="editor-desktop">
           </div>
 
 
           <div class="mobile:mb-10 lg:hidden sm:hidden" id="editor-mobile">
-            <img src="/public/images/1parte/illustration-editor-mobile.svg" alt="">
+            <img src="/public/images/illustration-editor-mobile.svg" alt="editor-mobile">
           </div>
 
           <div class="flex flex-col items-center md:w-31.4 mobile:mx-10">
@@ -198,40 +214,41 @@
 
 
       <!-- SECOND SECTION-->
-      <section 
-      class="relative flex items-center justify-center text-white mobile:h-600 bg-gradient-to-l from-gdesaturatedblue to-ggrayblue rounded-bl-5rem rounded-tr-5rem lg:justify-around mobile:flex-col">
+      <section
+        class="relative flex items-center justify-center text-white mobile:h-600 bg-gradient-to-l from-gdesaturatedblue to-ggrayblue rounded-bl-5rem rounded-tr-5rem lg:justify-around mobile:flex-col">
 
-      <div class="transform mobile:w-11/12 mobile:-translate-y-32" id="phone">
-        <img src="/public/images/illustration-phones.svg" alt="phones">
-      </div>
+        <div class="transform mobile:w-11/12 mobile:-translate-y-32" id="phone">
+          <img src="/public/images/illustration-phones.svg" alt="phones">
+        </div>
 
-      <div class="pb-10 tracking-wide transform lg:w-31.4 mobile:text-center mobile:mx-10 mobile:-translate-y-28 lg:mx-20">
-        <h2 class="pb-6 text-3xl font-bold">
-          State of the Art Infrastructure
-        </h2>
-        <p>
-          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
-          connectivity.
-          This ensures your site will load instantly, no matter where your readers are, keeping your site
-          competitive.
-        </p>
-      </div>
-      
+        <div
+          class="pb-10 tracking-wide transform lg:w-31.4 mobile:text-center mobile:mx-10 mobile:-translate-y-28 lg:mx-20">
+          <h2 class="pb-6 text-3xl font-bold">
+            State of the Art Infrastructure
+          </h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+            connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site
+            competitive.
+          </p>
+        </div>
+
       </section>
       <!-- END SECOND SECTION-->
-      
 
-       <!-- THIRD SECTION-->
+
+      <!-- THIRD SECTION-->
       <section class="relative flex lg:my-44 h-50 md:mx-20 lg:justify-end mobile:pb-14">
         <div class="md:w-31.4 mobile:mx-10">
           <div class="absolute w-2/3 -left-60 -bottom-32 lgmax:hidden">
-            <img src="/public/images/3parte/illustration-laptop-desktop.svg" alt="">
+            <img src="/public/images/illustration-laptop-desktop.svg" alt="laptop-desktop">
           </div>
 
           <div id="laptop-mobile" class="sm:hidden mobile:mt-14 mobile:mb-10">
-            <img src="/public/images/3parte/illustration-laptop-mobile.svg" alt="">
+            <img src="/public/images/illustration-laptop-mobile.svg" alt="laptop-mobile">
           </div>
-        
+
           <div class="pb-10">
             <h2 class="pb-6 text-2xl font-bold text-verydarkblue">
               Free, open, simple
@@ -311,51 +328,63 @@
 
   <script>
 
-      const menuproduct = document.querySelector('#menu-product')
-      const listproduct = document.querySelector('#list-product')
-      menuproduct.addEventListener('click', () => {
-            listproduct.classList.toggle('hidden')
-              })
+    const menuproduct = document.querySelector('#menu-product')
+    const listproduct = document.querySelector('#list-product')
+    const arrowprod = document.querySelector('#mn-icon')
+    menuproduct.addEventListener('click', () => {
+      listproduct.classList.toggle('hidden')
+      arrowprod.classList.toggle('rotate-180')
+    })
 
-      const menucompany = document.querySelector('#menu-company')
-      const listcompany = document.querySelector('#list-company')
-      menucompany.addEventListener('click', () => {
-            listcompany.classList.toggle('hidden')
-              })
+    const menucompany = document.querySelector('#menu-company')
+    const listcompany = document.querySelector('#list-company')
+    const arrowcomp = document.querySelector('#company-icon')
+    menucompany.addEventListener('click', () => {
+      listcompany.classList.toggle('hidden')
+      arrowcomp.classList.toggle('rotate-180')
+    })
 
-      const menuconnect = document.querySelector('#menu-connect')
-      const listconnect = document.querySelector('#list-connect')
-        menuconnect.addEventListener('click', () => {
-            listconnect.classList.toggle('hidden')
-              })
+    const menuconnect = document.querySelector('#menu-connect')
+    const listconnect = document.querySelector('#list-connect')
+    const arrowconnect = document.querySelector('#connect-icon')
+    menuconnect.addEventListener('click', () => {
+      listconnect.classList.toggle('hidden')
+      arrowconnect.classList.toggle('rotate-180')
+    })
 
-      
-      /* MOBILE MENU */
-      const mnmobile = document.querySelector('#menuMobile')
-      const nvmobile = document.querySelector('#navMobile')
 
-      mnmobile.addEventListener('click', () => {
-        nvmobile.classList.toggle('hidden')
-      })
+    /* MOBILE MENU */
+    const mnmobile = document.querySelector('#menuMobile')
+    const nvmobile = document.querySelector('#navMobile')
 
-      const mnproduct = document.querySelector('#mn-product')
-      const lsproduct = document.querySelector('#ls-product')
-      mnproduct.addEventListener('click', () => {
-            lsproduct.classList.toggle('hidden')
-              })
+    mnmobile.addEventListener('click', () => {
+      nvmobile.classList.toggle('hidden')
+    })
 
-      const mncompany = document.querySelector('#mn-company')
-      const lscompany = document.querySelector('#ls-company')
-      mncompany.addEventListener('click', () => {
-             lscompany.classList.toggle('hidden')
-              })
+    const mnproduct = document.querySelector('#mn-product')
+    const lsproduct = document.querySelector('#ls-product')
+    const arrowmnproduct = document.querySelector('#arrow-mn-product')
+    mnproduct.addEventListener('click', () => {
+      lsproduct.classList.toggle('hidden')
+      arrowmnproduct.classList.toggle('rotate-180')
+    })
 
-      const mnconnect = document.querySelector('#mn-connect')
-      const lsconnect = document.querySelector('#ls-connect')
-      mnconnect.addEventListener('click', () => {
-             lsconnect.classList.toggle('hidden')
-              })
-              
+    const mncompany = document.querySelector('#mn-company')
+    const lscompany = document.querySelector('#ls-company')
+    const arrowmncompany = document.querySelector('#arrow-mn-company')
+    mncompany.addEventListener('click', () => {
+      lscompany.classList.toggle('hidden')
+      arrowmncompany.classList.toggle('rotate-180')
+    })
+
+    const mnconnect = document.querySelector('#mn-connect')
+    const lsconnect = document.querySelector('#ls-connect')
+    const arrowmnconnect = document.querySelector('#arrow-mn-connect')
+    mnconnect.addEventListener('click', () => {
+      lsconnect.classList.toggle('hidden')
+      arrowmnconnect.classList.toggle('rotate-180')
+    })
+
   </script>
 
 </body>

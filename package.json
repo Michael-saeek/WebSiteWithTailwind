@@ -1,6 +1,7 @@
 {
   "name": "solutionnumber1",
   "version": "1.0.0",
+  "homepage": "https://michael-saeek.github.io/WebSiteWithTailwind/public/",
   "description": "",
   "main": "index.js",
   "scripts": {
