@@ -1,9 +1,9 @@
 {
-  "name": "solutionnumber1",
+  "name": "Blogr-landingpage",
   "version": "1.0.0",
   "homepage": "https://michael-saeek.github.io/WebSiteWithTailwind/public/index.html",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "build-css": "tailwindcss build ./src/style.css -o ./public/tailwind.css"
   },
