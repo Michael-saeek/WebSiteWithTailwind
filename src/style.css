@@ -6,16 +6,15 @@
 @tailwind utilities;
 
 .btn1 {
-    @apply px-6 py-3 mr-3 font-semibold duration-300 bg-white rounded-full text-lightred hover:bg-verylightred hover:text-white;
+    @apply px-6 py-3 mr-3 font-bold duration-300 bg-white rounded-full text-lightred hover:bg-verylightred hover:text-white;
 }
 
 .btn2 {
-    @apply px-6 py-3 font-semibold text-white duration-300 border border-white rounded-full hover:bg-white hover:text-verylightred;
+    @apply px-6 py-3 font-bold text-white duration-300 border border-white rounded-full hover:bg-white hover:text-verylightred;
 }
 
 li {
     list-style: none;
-    margin-bottom: 12px;
 }
 
 a {

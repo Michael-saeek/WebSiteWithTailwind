@@ -27,7 +27,8 @@ module.exports = {
         spacing: {
           '31.4': '31.4rem',
           '54': '54rem',
-          '34': '34rem'
+          '34': '34rem',
+          '90%': '90%'
 
         },
 
@@ -55,6 +56,7 @@ module.exports = {
         },
 
         screens: {
+          minmobile: {'min': '376px'},
           mobile: {'max':'375px'},
           mdmax: {'max': '768px'},
           lgmax: {'max': '1024px'}

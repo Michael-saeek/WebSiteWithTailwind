@@ -31,52 +31,99 @@
         <nav class="flex items-center justify-between">
          
 
-          <div class="flex flex-row items-center ">
+          <div class="flex flex-row items-center h-0">
             <h1 class="pr-12 text-4xl font-semibold transform -translate-y-2">Blogr</h1>
 
             <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li>Product 
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <li id="menu-product" class="hover:underline">
+                Product 
               </li>
-              <div class="hidden">
-                <li><a href="">Overview</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Marketplace</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Integrations</a></li>
-              </div>
+              <ul id="list-product" class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+                <li class="pb-2 hover:underline"><a href="">Overview</a></li>
+                <li class="pb-2 hover:underline"><a href="">Pricing</a></li>
+                <li class="pb-2 hover:underline"><a href="">Marketplace</a></li>
+                <li class="pb-2 hover:underline"><a href="">Features</a></li>
+                <li class="pb-2 hover:underline"><a href="">Integrations</a></li>
+              </ul>
             </ul>
 
             <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li>Company</li> 
-              <div class="hidden">
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Careers</a></li>
-              </div>
+              <li id="menu-company" class="hover:underline">Company</li>
+
+              <ul id="list-company" class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+                <li class="pb-2 hover:underline"><a href="">About</a></li>
+                <li class="pb-2 hover:underline"><a href="">Team</a></li>
+                <li class="pb-2 hover:underline"><a href="">Blog</a></li>
+                <li class="pb-2 hover:underline"><a href="">Careers</a></li>
+              </ul>
             </ul>
 
             <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li>Connect</li>
-              <div class="hidden">
-                <li><a href="">Contact</a></li>
-                <li><a href="">Newsletter</a></li>
-                <li><a href="">LinkedIn</a></li>
-              </div>
+              <li id="menu-connect" class="hover:underline">Connect</li>
+
+              <ul id="list-connect" class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+                <li class="pb-2 hover:underline"><a href="">Contact</a></li>
+                <li class="pb-2 hover:underline"><a href="">Newsletter</a></li>
+                <li class="pb-2 hover:underline"><a href="">LinkedIn</a></li>
+              </ul>
 
             </ul>
           </div>
 
-          <div id="menu" class="absolute right-7 md:hidden">
+
+          <!-- MENU ICON -->
+          <div id="menuMobile" class="absolute right-7 md:hidden">
             <svg class="cursor-pointer w-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </div>
+          
+          
+          <div id="navMobile" class="duration-300 transform z-30 hidden text-gdesaturatedblue font-overpass absolute top-20 flex flex-col w-90% h-screen text-black bg-white shadow-2xl left-5 rounded-lg minmobile:hidden p-6">
 
+            <ul class="mt-10 mb-6">
+              <li id="mn-product" class="font-bold">
+                Product 
+              </li>
+              <ul id="ls-product" class="hidden py-4 font-medium bg-gray-200 rounded-lg ">
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Overview</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Pricing</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Marketplace</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Features</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Integrations</a></li>
+              </ul>
+            </ul>
 
-         
+            <ul class="mb-6"">
+              <li id="mn-company" class="font-bold">Company</li>
+
+              <ul id="ls-company" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">About</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Team</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Blog</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Careers</a></li>
+              </ul>
+            </ul>
+
+            <ul class="mb-6"">
+              <li id="mn-connect" class="font-bold">Connect</li>
+
+              <ul id="ls-connect" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Contact</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Newsletter</a></li>
+                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">LinkedIn</a></li>
+              </ul>
+            </ul>
+
+            <hr>
+
+            <ul class="mt-4 text-center">
+              <li class="mb-2"><button class="px-6 py-3 font-bold duration-300 bg-white rounded-full text-gdesaturatedblue hover:bg-verylightred hover:text-white;">Login</button></li>
+              <li><button class="px-6 py-3 text-white rounded-full bg-gradient-to-r from-glightred1 to bg-glightred2">Sign Up</button></li>
+            </ul>
+          </div>
+          <!-- END MENU ICON -->
 
           <div>
             <ul class="flex flex-row mdmax:hidden">
@@ -162,7 +209,7 @@
         <h2 class="pb-6 text-3xl font-bold">
           State of the Art Infrastructure
         </h2>
-        <p class="">
+        <p>
           With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
           connectivity.
           This ensures your site will load instantly, no matter where your readers are, keeping your site
@@ -222,30 +269,30 @@
           <div>
             <ul class="mb-10 mobile:">
               <h3 class="pb-6 text-lg font-semibold text-white">Product</h3>
-              <li><a class="duration-300 hover:underline" href="">Overview</a></li>
-              <li><a class="duration-300 hover:underline" href="">Pricing</a></li>
-              <li><a class="duration-300 hover:underline" href="">Marketplace</a></li>
-              <li><a class="duration-300 hover:underline" href="">Features</a></li>
-              <li><a class="duration-300 hover:underline" href="">Integrations</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Overview</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Pricing</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Marketplace</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Features</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Integrations</a></li>
             </ul>
           </div>
 
           <div>
             <ul class="mb-10 mobile:">
               <h3 class="pb-6 text-lg font-semibold text-white">Company</h3>
-              <li><a class="duration-300 hover:underline" href="">About</a></li>
-              <li><a class="duration-300 hover:underline" href="">Team</a></li>
-              <li><a class="duration-300 hover:underline" href="">Blog</a></li>
-              <li><a class="duration-300 hover:underline" href="">Careers</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">About</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Team</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Blog</a></li>
+              <li class="pb-2"><a class="duration-300 hover:underline" href="#">Careers</a></li>
             </ul>
           </div>
 
           <div>
             <ul class="mb-10 mobile:">
               <h3 class="pb-6 text-lg font-semibold text-white">Connect</h3>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Newsletter</a></li>
-              <li><a href="">LinkedIn</a></li>
+              <li class="pb-2"><a href="#">Contact</a></li>
+              <li class="pb-2"><a href="#">Newsletter</a></li>
+              <li class="pb-2"><a href="#">LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -261,6 +308,55 @@
 
     </main>
   </section>
+
+  <script>
+
+      const menuproduct = document.querySelector('#menu-product')
+      const listproduct = document.querySelector('#list-product')
+      menuproduct.addEventListener('click', () => {
+            listproduct.classList.toggle('hidden')
+              })
+
+      const menucompany = document.querySelector('#menu-company')
+      const listcompany = document.querySelector('#list-company')
+      menucompany.addEventListener('click', () => {
+            listcompany.classList.toggle('hidden')
+              })
+
+      const menuconnect = document.querySelector('#menu-connect')
+      const listconnect = document.querySelector('#list-connect')
+        menuconnect.addEventListener('click', () => {
+            listconnect.classList.toggle('hidden')
+              })
+
+      
+      /* MOBILE MENU */
+      const mnmobile = document.querySelector('#menuMobile')
+      const nvmobile = document.querySelector('#navMobile')
+
+      mnmobile.addEventListener('click', () => {
+        nvmobile.classList.toggle('hidden')
+      })
+
+      const mnproduct = document.querySelector('#mn-product')
+      const lsproduct = document.querySelector('#ls-product')
+      mnproduct.addEventListener('click', () => {
+            lsproduct.classList.toggle('hidden')
+              })
+
+      const mncompany = document.querySelector('#mn-company')
+      const lscompany = document.querySelector('#ls-company')
+      mncompany.addEventListener('click', () => {
+             lscompany.classList.toggle('hidden')
+              })
+
+      const mnconnect = document.querySelector('#mn-connect')
+      const lsconnect = document.querySelector('#ls-connect')
+      mnconnect.addEventListener('click', () => {
+             lsconnect.classList.toggle('hidden')
+              })
+              
+  </script>
 
 </body>
 
