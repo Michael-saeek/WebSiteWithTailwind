@@ -48,7 +48,22 @@ module.exports = {
         },
 
         backgroundPosition: {
-          '-position': '-721px -1400px;'
+          //header
+          'position': '-480px -1370px;',
+          'position-mobile': '-280px -1370px;',
+
+          //section phone
+          'position-phone': '-260px -440px',
+          'circle-position': '-87px -156px'
+
+        },
+
+        backgroundSize: {
+          //header
+          'hdrmobile': '1120px',
+
+          //section phone
+          'phone': '550px'
         },
 
         borderRadius: {

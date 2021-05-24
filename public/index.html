@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="stylesheet" href="./tailwind.css">
 
   <title>Frontend Mentor | [Blogr]</title>
@@ -23,144 +23,147 @@
 
 <body class="font-ubuntu ">
   <section class="mobile:text-center">
-    <header class="relative text-white bg-gradient-to-r from-glightred1 to-glightred2 h-500 rounded-bl-5rem ">
+    <header id="header" class="relative overflow-hidden text-white h-500 rounded-bl-5rem bg-gradient-to-r from-glightred1 to-glightred2">
+      <div class="h-full bg-pattern bg-position mobile:bg-hdrmobile mobile:bg-position-mobile">
+            <div class="py-10 mx-20 mobile:mx-6">
+              <!--  MARGIN CONTAINER -->
+      
+              <nav class="flex items-center justify-between">
+      
+      
+                <div class="flex flex-row items-center h-0">
+                  <h1 class="pr-12 text-4xl font-semibold transform -translate-y-2 mobile:translate-y-0">Blogr</h1>
+      
+                  <ul class="relative px-5 cursor-pointer mdmax:hidden">
+                    <li id="menu-product" class="hover:underline">Product 
+                      <svg id="mn-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                    </li>
+                    <ul id="list-product"
+                      class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+                      <li class="pb-2 hover:underline"><a href="">Overview</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Pricing</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Marketplace</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Features</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Integrations</a></li>
+                    </ul>
+                  </ul>
+      
+                  <ul class="px-5 cursor-pointer mdmax:hidden">
+                    <li id="menu-company" class="hover:underline">Company
+                      <svg id="company-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                    </li>
+      
+                    <ul id="list-company"
+                      class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+                      <li class="pb-2 hover:underline"><a href="">About</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Team</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Blog</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Careers</a></li>
+                    </ul>
+                  </ul>
+      
+                  <ul class="px-5 cursor-pointer mdmax:hidden">
+                    <li id="menu-connect" class="hover:underline">Connect
+                      <svg id="connect-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                    </li>
+      
+                    <ul id="list-connect"
+                      class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
+                      <li class="pb-2 hover:underline"><a href="">Contact</a></li>
+                      <li class="pb-2 hover:underline"><a href="">Newsletter</a></li>
+                      <li class="pb-2 hover:underline"><a href="">LinkedIn</a></li>
+                    </ul>
+      
+                  </ul>
+                </div>
+      
+      
+                <!-- MENU ICON -->
+                <div id="menuMobile" class="absolute right-7 md:hidden">
+                  <svg class="cursor-pointer w-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </div>
+      
+      
+                <div id="navMobile"
+                  class="duration-300 transform z-50 hidden text-gdesaturatedblue font-overpass absolute top-20 flex flex-col w-90% h-screen text-black bg-white shadow-2xl left-5 rounded-lg minmobile:hidden p-6">
+      
+                  <ul class="mt-10 mb-6">
+                    <li id="mn-product" class="font-bold">Product
+                      <svg id="arrow-mn-product" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                    </li>
+                    <ul id="ls-product" class="hidden py-4 font-medium bg-gray-200 rounded-lg ">
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Overview</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Pricing</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Marketplace</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Features</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Integrations</a></li>
+                    </ul>
+                  </ul>
+      
+                  <ul class="mb-6">
+                    <li id="mn-company" class="font-bold">Company
+                      <svg id="arrow-mn-company" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                    </li>
+      
+                    <ul id="ls-company" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">About</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Team</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Blog</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Careers</a></li>
+                    </ul>
+                  </ul>
+      
+                  <ul class="mb-6">
+                    <li id="mn-connect" class="font-bold">Connect
+                      <svg id="arrow-mn-connect" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                    </li>
+      
+                    <ul id="ls-connect" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Contact</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Newsletter</a></li>
+                      <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">LinkedIn</a></li>
+                    </ul>
+                  </ul>
+      
+                  <hr>
+      
+                  <ul class="mt-4 text-center">
+                    <li class="mb-2"><button
+                        class="px-6 py-3 font-bold duration-300 bg-white rounded-full text-gdesaturatedblue hover:bg-verylightred hover:text-white;">Login</button>
+                    </li>
+                    <li><button
+                        class="px-6 py-3 text-white rounded-full bg-gradient-to-r from-glightred1 to bg-glightred2">Sign
+                        Up</button></li>
+                  </ul>
+                </div>
+                <!-- END MENU ICON -->
+      
+                <div>
+                  <ul class="flex flex-row mdmax:hidden">
+                    <li><button class="mr-4 btn2">Login</button></li>
+                    <li><button class="btn1">Sign Up</button></li>
+                  </ul>
+                </div>
+      
+              </nav>
+      
+              <section class="flex flex-col items-center justify-center mt-20 justify-items-center font-overpass">
+                <h1 class="text-5xl font-bold mb-7 mobile:text-4xl">A modern publishing platform</h1>
+                <p class="mb-10 text-lg font-extralight">Grow your audience and build your online brand</p>
+      
+                <div>
+                  <button class="btn1">Start for Free</button>
+                  <button class="btn2">Learn More</button>
+                </div>
+              </section>
+      
+            </div> <!-- END MARGIN CONTAINER -->
+      </div>
 
-      <div class="py-10 mx-20 mobile:mx-6">
-        <!--  MARGIN CONTAINER -->
-
-        <nav class="flex items-center justify-between">
-
-
-          <div class="flex flex-row items-center h-0">
-            <h1 class="pr-12 text-4xl font-semibold transform -translate-y-2">Blogr</h1>
-
-            <ul class="relative px-5 cursor-pointer mdmax:hidden">
-              <li id="menu-product" class="hover:underline">Product 
-                <svg id="mn-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
-              </li>
-              <ul id="list-product"
-                class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
-                <li class="pb-2 hover:underline"><a href="">Overview</a></li>
-                <li class="pb-2 hover:underline"><a href="">Pricing</a></li>
-                <li class="pb-2 hover:underline"><a href="">Marketplace</a></li>
-                <li class="pb-2 hover:underline"><a href="">Features</a></li>
-                <li class="pb-2 hover:underline"><a href="">Integrations</a></li>
-              </ul>
-            </ul>
-
-            <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li id="menu-company" class="hover:underline">Company
-                <svg id="company-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
-              </li>
-
-              <ul id="list-company"
-                class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
-                <li class="pb-2 hover:underline"><a href="">About</a></li>
-                <li class="pb-2 hover:underline"><a href="">Team</a></li>
-                <li class="pb-2 hover:underline"><a href="">Blog</a></li>
-                <li class="pb-2 hover:underline"><a href="">Careers</a></li>
-              </ul>
-            </ul>
-
-            <ul class="px-5 cursor-pointer mdmax:hidden">
-              <li id="menu-connect" class="hover:underline">Connect
-                <svg id="connect-icon" class="inline text-white transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FFFFFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
-              </li>
-
-              <ul id="list-connect"
-                class="absolute hidden px-6 py-4 mt-4 text-black duration-300 transform -translate-x-5 bg-white rounded shadow-2xl">
-                <li class="pb-2 hover:underline"><a href="">Contact</a></li>
-                <li class="pb-2 hover:underline"><a href="">Newsletter</a></li>
-                <li class="pb-2 hover:underline"><a href="">LinkedIn</a></li>
-              </ul>
-
-            </ul>
-          </div>
-
-
-          <!-- MENU ICON -->
-          <div id="menuMobile" class="absolute right-7 md:hidden">
-            <svg class="cursor-pointer w-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </div>
-
-
-          <div id="navMobile"
-            class="duration-300 transform z-30 hidden text-gdesaturatedblue font-overpass absolute top-20 flex flex-col w-90% h-screen text-black bg-white shadow-2xl left-5 rounded-lg minmobile:hidden p-6">
-
-            <ul class="mt-10 mb-6">
-              <li id="mn-product" class="font-bold">Product
-                <svg id="arrow-mn-product" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-              </li>
-              <ul id="ls-product" class="hidden py-4 font-medium bg-gray-200 rounded-lg ">
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Overview</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Pricing</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Marketplace</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Features</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Integrations</a></li>
-              </ul>
-            </ul>
-
-            <ul class="mb-6">
-              <li id="mn-company" class="font-bold">Company
-                <svg id="arrow-mn-company" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-              </li>
-
-              <ul id="ls-company" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">About</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Team</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Blog</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Careers</a></li>
-              </ul>
-            </ul>
-
-            <ul class="mb-6">
-              <li id="mn-connect" class="font-bold">Connect
-                <svg id="arrow-mn-connect" class="inline transform" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
-              </li>
-
-              <ul id="ls-connect" class="hidden py-4 font-medium bg-gray-200 rounded-lg">
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Contact</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">Newsletter</a></li>
-                <li class="pb-2 hover:text-white hover:bg-gray-300"><a href="">LinkedIn</a></li>
-              </ul>
-            </ul>
-
-            <hr>
-
-            <ul class="mt-4 text-center">
-              <li class="mb-2"><button
-                  class="px-6 py-3 font-bold duration-300 bg-white rounded-full text-gdesaturatedblue hover:bg-verylightred hover:text-white;">Login</button>
-              </li>
-              <li><button
-                  class="px-6 py-3 text-white rounded-full bg-gradient-to-r from-glightred1 to bg-glightred2">Sign
-                  Up</button></li>
-            </ul>
-          </div>
-          <!-- END MENU ICON -->
-
-          <div>
-            <ul class="flex flex-row mdmax:hidden">
-              <li><button class="mr-4 btn2">Login</button></li>
-              <li><button class="btn1">Sign Up</button></li>
-            </ul>
-          </div>
-
-        </nav>
-
-        <section class="flex flex-col items-center justify-center mt-20 justify-items-center font-overpass">
-          <h1 class="text-5xl font-bold mb-7 mobile:text-4xl">A modern publishing platform</h1>
-          <p class="mb-10 text-lg font-extralight">Grow your audience and build your online brand</p>
-
-          <div>
-            <button class="btn1">Start for Free</button>
-            <button class="btn2">Learn More</button>
-          </div>
-        </section>
-
-      </div> <!-- END MARGIN CONTAINER -->
+      
 
     </header>
     <!-- END HEADER-->
@@ -214,27 +217,31 @@
 
 
       <!-- SECOND SECTION-->
-      <section
-        class="relative flex items-center justify-center text-white mobile:h-600 bg-gradient-to-l from-gdesaturatedblue to-ggrayblue rounded-bl-5rem rounded-tr-5rem lg:justify-around mobile:flex-col">
 
-        <div class="transform mobile:w-11/12 mobile:-translate-y-32" id="phone">
-          <img src="/images/illustration-phones.svg" alt="phones">
-        </div>
+       
+          <section
+          class="relative text-white bg-gradient-to-l from-gdesaturatedblue to-ggrayblue mobile:h-600 rounded-bl-5rem rounded-tr-5rem lg:justify-around mobile:flex-col">
+              <div class="flex items-center justify-center h-full bg-no-repeat bg-circle bg-position-phone mobile:bg-phone mobile:bg-center mobile:bg mobile:bg-circle-position">
+                
+                  <div class="transform lg:-translate-x-8 mobile:-translate-y-60 mobile:absolute " id="phone">
+                    <img src="/images/illustration-phones.svg" alt="phones">
+                  </div>
+          
+                  <div
+                    class="pb-10 tracking-wide transform lg:w-31.4 mobile:text-center mobile:mx-10 mobile:translate-y-28 lg:mx-20">
+                    <h2 class="pb-6 text-3xl font-bold">
+                      State of the Art Infrastructure
+                    </h2>
+                    <p>
+                      With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+                      connectivity.
+                      This ensures your site will load instantly, no matter where your readers are, keeping your site
+                      competitive.
+                    </p>
+                  </div>
 
-        <div
-          class="pb-10 tracking-wide transform lg:w-31.4 mobile:text-center mobile:mx-10 mobile:-translate-y-28 lg:mx-20">
-          <h2 class="pb-6 text-3xl font-bold">
-            State of the Art Infrastructure
-          </h2>
-          <p>
-            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
-            connectivity.
-            This ensures your site will load instantly, no matter where your readers are, keeping your site
-            competitive.
-          </p>
-        </div>
-
-      </section>
+              </div>
+        </section>
       <!-- END SECOND SECTION-->
 
 
@@ -356,9 +363,11 @@
     /* MOBILE MENU */
     const mnmobile = document.querySelector('#menuMobile')
     const nvmobile = document.querySelector('#navMobile')
+    const header = document.querySelector('#header')
 
     mnmobile.addEventListener('click', () => {
       nvmobile.classList.toggle('hidden')
+      header.classList.toggle('overflow-hidden')
     })
 
     const mnproduct = document.querySelector('#mn-product')
