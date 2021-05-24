@@ -38,8 +38,8 @@ module.exports = {
         },
 
         backgroundImage: {
-          'pattern': 'url(/public/images/bg-pattern-intro.svg)',
-          'circle': 'url(/public/images/bg-pattern-circles.svg)',
+          'pattern': 'url(/images/bg-pattern-intro.svg)',
+          'circle': 'url(/images/bg-pattern-circles.svg)',
           'pc-desktop': 'url(/public/images/illustration-editor-desktop.svg)',
           'pc-mobile' : 'url(/public/images/illustration-editor-mobile.svg)',
           'laptop': 'url(/public/images/illustration-laptop-desktop.svg)',
